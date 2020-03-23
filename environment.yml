@@ -1,0 +1,13 @@
+# Notes:
+# 1. Conda searches for packages in the channels listed below, in the order given
+# 2. For some packages the channels may defined explicitly (i.e. channel::package=version)
+# 3. Available spaCy models are described at https://spacy.io/models/en; the "Release details" button is a link to
+#    appropriate release package at GitHub
+
+name: cord-19-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7.*
+  - pip
