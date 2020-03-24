@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# data
+# large files
 data/CORD-19-research-challenge/
+models/model*
