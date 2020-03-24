@@ -1,0 +1,9 @@
+{"label": "PERSON", "pattern": [{"ORTH": "Barack", "OP": "?"}, {"ORTH": "Obama"}]}
+{"label": "PERSON", "pattern": [{"ORTH": "Peter", "OP": "?"}, {"ORTH": "Thiel"}]}
+{"label": "PERSON", "pattern": [{"ORTH": "Donald", "OP": "?"}, {"ORTH": "Trump"}, {"ORTH": "Jr", "OP": "?"}]}
+{"label": "ORG", "pattern": [{"LOWER": "uber"}]}
+{"label": "ORG", "pattern": [{"LOWER": "yahoo"}]}
+{"label": "ORG", "pattern": [{"LOWER": "twitter"}]}
+{"label": "ORG", "pattern": [{"LOWER": "google"}]}
+{"label": "ORG", "pattern": [{"LOWER": "alibaba"}]}
+{"label": "ORG", "pattern": [{"ORTH": "Apple"}]}
