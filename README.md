@@ -1,6 +1,6 @@
 # COVID-19 Open Research Dataset Challenge (CORD-19)
 
-Kaggle challenge: [CORD-19]](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
+Kaggle challenge: [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
 Task: [What do we know about COVID-19 risk factors?](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=558)
 
