@@ -22,14 +22,8 @@ prodigy ner.manual cord_19_abstracts en_core_web_lg data/raw/cord_19_abstracts_f
 # save annotations to a file
 prodigy db-out cord_19_abstracts > data/annotated/cord_19_abstracts.jsonl
 
-# data-to-spacy
-TODO - understand this recipe
-
 # train model
 prodigy train ner cord_19_abstracts models/en_core_web_lg_no_ner --output models/modelX
-
-# predict
-TODO
 ```
 
 ## Raw data filtering
@@ -37,11 +31,6 @@ TODO
 ```bash
 fgrep "risk factor" data/raw/cord_19_abstracts.jsonl > data/raw/cord_19_abstracts_filtered.jsonl
 ```
-
-## `RISK_FACTOR` patterns
-
-At the moment, the file contains only very basic patterns to highlight `risk factor` or `risk factor` pharses in
-the text, not the actual factors.
 
 ### Misc
 
