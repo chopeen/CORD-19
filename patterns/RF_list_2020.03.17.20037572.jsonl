@@ -1,0 +1,19 @@
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "old", "OP": "?"}, {"LOWER": "age"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "male"}, {"LOWER": "gender", "OP": "?"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "smoking"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LEMMA": "comorbidity"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "cerebrovascular"}, {"LEMMA": "disease"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "diabetes"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "hypertension"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "lymphocytopenia"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "lymphopenia"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "thrombocytopenia"}]}
+{"label": "RISK_FACTOR", "pattern": [{"ORTH": "CKD"}]}
+{"label": "RISK_FACTOR", "pattern": [{"ORTH": "COPD"}]}
+{"label": "RISK_FACTOR", "pattern": [{"ORTH": "PLT"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "elevated", "OP": "?"}, {"ORTH": "LDH"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "elevated", "OP": "?"}, {"ORTH": "CRP"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "elevated", "OP": "?"}, {"ORTH": "D-dimer"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "lymphocyte"}, {"LOWER": "count"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "digestive"}, {"LEMMA": "symptom"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "chill"}]}
