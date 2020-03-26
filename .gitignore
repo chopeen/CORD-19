@@ -128,6 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# VS Code
+.vscode/settings.json
+
 # large files
 data/CORD-19-research-challenge/
+models/en_core_web_lg_no_ner
 models/model*

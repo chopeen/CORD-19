@@ -13,13 +13,13 @@ prodigy ner.manual cord_19_abstracts en_core_web_lg data/raw/cord_19_abstracts_f
   --label RISK_FACTOR --patterns patterns/RISK_FACTOR.jsonl
 
 # save annotations to a file
-prodigy db-out cord_19_abstracts > data/annotated/cord_19_abstracts_filtered.jsonl
+prodigy db-out cord_19_abstracts > data/annotated/cord_19_abstracts.jsonl
 
 # data-to-spacy
 TODO - understand this recipe
 
 # train model
-prodigy train ner cord_19_abstracts en_core_web_lg --output models/modelX
+prodigy train ner cord_19_abstracts models/en_core_web_lg_no_ner --output models/modelX
 
 # predict
 TODO
