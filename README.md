@@ -9,21 +9,32 @@ Task: [What do we know about COVID-19 risk factors?](https://www.kaggle.com/alle
 ```bash
 # start Prodigy and annotate some entities with patterns
 # https://prodi.gy/docs/named-entity-recognition#manual-patterns
-prodigy ner.manual ner_news_headlines en_core_web_lg data/raw/news_headlines.jsonl \
-  --label PERSON,ORG --patterns patterns/PERSON_ORG.jsonl
+prodigy ner.manual cord_19_abstracts en_core_web_lg data/raw/cord_19_abstracts_filtered.jsonl \
+  --label RISK_FACTOR --patterns patterns/RISK_FACTOR.jsonl
 
 # save annotations to a file
-prodigy db-out ner_news_headlines > data/annotated/ner_news_headlines.jsonl
+prodigy db-out cord_19_abstracts > data/annotated/cord_19_abstracts_filtered.jsonl
 
 # data-to-spacy
 TODO - understand this recipe
 
 # train model
-prodigy train ner ner_news_headlines en_core_web_lg --output models/
+prodigy train ner cord_19_abstracts en_core_web_lg --output models/modelX
 
 # predict
 TODO
 ```
+
+## Raw data filtering
+
+```bash
+fgrep "risk factor" data/raw/cord_19_abstracts.jsonl > data/raw/cord_19_abstracts_filtered.jsonl
+```
+
+## `RISK_FACTOR` patterns
+
+At the moment, the file contains only very basic patterns to highlight `risk factor` or `risk factor` pharses in
+the text, not the actual factors.
 
 ### Misc
 
