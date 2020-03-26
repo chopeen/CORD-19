@@ -2,7 +2,14 @@
 
 Kaggle challenge: [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
-Task: [What do we know about COVID-19 risk factors?](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=558)
+Task: [What do we know about COVID-19 risk
+factors?](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=558)
+
+## Dataset citation
+
+COVID-19 Open Research Dataset (CORD-19). 2020. Version 2020-03-13.
+Retrieved from https://pages.semanticscholar.org/coronavirus-research.
+Accessed 2020-03-26. doi:10.5281/zenodo.3715506
 
 ## Prodigy
 
