@@ -133,5 +133,4 @@ dmypy.json
 
 # large files
 data/CORD-19-research-challenge/
-models/en_*_no_ner
-models/model*
+models/*
