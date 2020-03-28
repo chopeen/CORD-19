@@ -1,10 +1,11 @@
 {
+    "theme": "spacy",
     "custom_theme": {
         "cardMaxWidth": 1000
     },
     "card_css": {
         "padding": 5,
-        "fontSize": 16
+        "fontSize": 18
     }
 }
 
