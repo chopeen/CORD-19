@@ -28,7 +28,7 @@ prodigy match cord_19_abstracts_match models/en_core_web_lg_no_ner data/raw/cord
 prodigy db-out cord_19_abstracts > data/annotated/cord_19_abstracts.jsonl
 
 # train model
-prodigy train ner cord_19_abstracts models/en_core_web_lg_no_ner --output models/modelX
+prodigy train ner cord_19_abstracts_match models/en_core_web_lg_no_ner --output models/2020_03_28_match/en_rf_web_lg
 ```
 
 ## Raw data filtering
