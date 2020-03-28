@@ -133,5 +133,5 @@ dmypy.json
 
 # large files
 data/CORD-19-research-challenge/
-models/en_core_web_lg_no_ner
+models/en_*_no_ner
 models/model*
