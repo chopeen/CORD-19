@@ -1,5 +1,6 @@
 {"label": "RISK_FACTOR", "pattern": [{"LOWER": "old", "OP": "?"}, {"LOWER": "age"}]}
 {"label": "RISK_FACTOR", "pattern": [{"LOWER": "male"}, {"LOWER": "gender", "OP": "?"}]}
+{"label": "RISK_FACTOR", "pattern": [{"LOWER": "male"}, {"LOWER": "sex", "OP": "?"}]}
 {"label": "RISK_FACTOR", "pattern": [{"LOWER": "smoking"}]}
 {"label": "RISK_FACTOR", "pattern": [{"LEMMA": "comorbidity"}]}
 {"label": "RISK_FACTOR", "pattern": [{"LOWER": "cerebrovascular"}, {"LEMMA": "disease"}]}
