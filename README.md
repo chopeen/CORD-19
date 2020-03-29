@@ -25,6 +25,11 @@ prodigy ner.manual cord_19_abstracts en_core_web_lg data/raw/cord_19_abstracts_f
 # https://prodi.gy/docs/recipes#match
 prodigy match cord_19_abstracts_match models/en_core_web_lg_no_ner data/raw/cord_19_abstracts_filtered.jsonl \
   --label RISK_FACTOR --patterns patterns/RF_list_2020.03.17.20037572.jsonl --label-span
+
+# manual annotation with: suggestions from patterns and existing model in the loop
+# https://prodi.gy/docs/recipes#ner-teach
+prodigy ner.teach cord_19_abstracts_teach models/2020_03_28_match/en_rf_web_lg data/raw/cord_19_abstracts_filtered.jsonl \
+  --label RISK_FACTOR --patterns patterns/RF_list_2020.03.17.20037572.jsonl
 ```
 
 ### Training
