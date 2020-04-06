@@ -134,3 +134,4 @@ dmypy.json
 # large files
 data/CORD-19-research-challenge/
 models/*
+!models/tok2vec_*.bin
