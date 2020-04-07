@@ -13,6 +13,7 @@ dependencies:
   - python=3.7.*
   - pip
   - anaconda::cudatoolkit=10.0.*
+  - anaconda::cudnn
   - jupyter
   - pip:
       - spacy[cuda100]==2.2.*
