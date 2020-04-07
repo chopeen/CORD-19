@@ -94,9 +94,7 @@ In case of errors:
 
 ### WSL
 
-I was unable to install `spacy[cuda]` using WSL. Lack of GPU support? Lack of appropriate drivers?
-
-**TOCHECK:** Can CUDA Toolkit be installed in WSL?
+I was unable to install `spacy[cuda]` using WSL, because [WSL is not able to access the host GPU](https://github.com/Microsoft/WSL/issues/3847).
 
 ```bash
 Modules:
@@ -107,4 +105,4 @@ Modules:
 ERROR: CUDA could not be found on your system.
 ```
 
-Zsh did not recognize the package name with brackets, but escaping them helped (`pip install spacy\[cuda\]`).
+BTW, Zsh did not recognize the package name with brackets, but escaping them helped (`pip install spacy\[cuda\]`).
