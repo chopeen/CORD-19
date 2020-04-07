@@ -61,19 +61,21 @@ fgrep "risk factor" data/raw/cord_19_abstracts.jsonl > data/raw/cord_19_abstract
 
 ## GPU support in spaCy
 
-For GPU support, you must install spaCy with a following command:
-
-```bash
-pip install -U spacy[cuda]
-
-pip install -U spacy[cuda92]  # if you know your CUDA version
-```
-
-More information:
+For GPU support, you must install package `spacy[cuda]`; you can also specify CUDA version number (e.g. `spacy[cuda100]`)
+to install via wheel and save compilation time.
 
 - [Run spaCy with GPU](https://spacy.io/usage#gpu)
 - [What do square brackets mean in pip install?](https://stackoverflow.com/q/46775346/95)
 
-### GPU and WSL
+### Windows 10
+
+1. Install C++ compiler from Microsoft
+   (e.g. [VS 2019 Community](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017))
+2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+3. Reboot
+4. `conda activate cord-19-env`
+5. `pip install spacy[cuda]`
+
+### WSL
 
 I was unable to install `spacy[cuda]` using WSL. Lack of GPU support? Lack of appropriate drivers?
