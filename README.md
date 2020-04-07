@@ -79,3 +79,16 @@ to install via wheel and save compilation time.
 ### WSL
 
 I was unable to install `spacy[cuda]` using WSL. Lack of GPU support? Lack of appropriate drivers?
+
+**TOCHECK:** Can CUDA Toolkit be installed in WSL?
+
+```bash
+Modules:
+  cuda      : No
+    -> Cannot link libraries: ['cublas', 'cuda', 'cudart', 'cufft', 'curand', 'cusparse', 'nvrtc']
+    -> Check your LDFLAGS environment variable.
+
+ERROR: CUDA could not be found on your system.
+```
+
+Zsh did not recognize the package name with brackets, but escaping them helped (`pip install spacy\[cuda\]`).
