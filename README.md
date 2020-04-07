@@ -61,21 +61,36 @@ fgrep "risk factor" data/raw/cord_19_abstracts.jsonl > data/raw/cord_19_abstract
 
 ## GPU support in spaCy
 
-For GPU support, you must install package `spacy[cuda]`; you can also specify CUDA version number (e.g. `spacy[cuda100]`)
-to install via wheel and save compilation time.
+For GPU support, you must install package `spacy[cuda100]` ([must match CUDA version](https://docs-cupy.chainer.org/en/stable/install.html#install-cupy))
+for wheel distribution or `spacy[cuda]` to compile it from source.
 
 - [Run spaCy with GPU](https://spacy.io/usage#gpu)
 - [What do square brackets mean in pip install?](https://stackoverflow.com/q/46775346/95)
 
 ### Windows 10
 
+```bash
+conda env create -f environment-gpu.yml
+```
+
+#### Windows 10 (failed attempt)
+
+In theory, this method should work. However, CuPy could not get installed properly, so I decided to downgrade to CUDA 10 and
+install the Toolkit as part of the Conda environment (see `environment-gpu.yml`).
+
 1. Install C++ compiler from Microsoft
    (e.g. [VS 2019 Community](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017))
-2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+2. Install [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads)
 3. Reboot
 4. `conda activate cord-19-env`
-5. `pip uninstall spacy` - to remove non-GPU spaCy
-6. `pip install spacy[cuda100]`
+5. `pip install -U spacy[cuda]`
+    - I tried `spacy[cuda102]`, but got _WARNING: spacy 2.2.4 does not provide the extra 'cuda102'_
+
+In case of errors:
+
+1. confirm that the version of installed package `cupy-cudaNNN` matches CUDA Toolkit version (e.g. `cupy-cuda102` for version 10.2)
+2. read carefully the output of `python -c "import cupy; cupy.show_config()"`; it contains useful tips
+3. uninstall CuPy and install with `pip install cupy --no-cache-dir -vvvv`
 
 ### WSL
 
