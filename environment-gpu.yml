@@ -1,0 +1,26 @@
+# Notes:
+# 1. Conda searches for packages in the channels listed below, in the order given
+# 2. For some packages the channels may defined explicitly (i.e. channel::package=version)
+# 3. Available spaCy models are described at https://spacy.io/models/en; the "Release details" button is a link to
+#    appropriate release package at GitHub
+
+name: cord-19-env
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.7.*
+  - pip
+  - anaconda::cudatoolkit=10.0.*
+  - jupyter
+  - pip:
+      - spacy[cuda100]==2.2.*
+      # - https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.2.5/en_core_web_lg-2.2.5.tar.gz
+      # - https://github.com/explosion/spacy-models/releases/download/en_vectors_web_lg-2.1.0/en_vectors_web_lg-2.1.0.tar.gz
+      # - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_core_sci_lg-0.2.4.tar.gz
+      # - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_ner_bionlp13cg_md-0.2.4.tar.gz
+#     - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+#     - https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.2.5/en_core_web_md-2.2.5.tar.gz
+#     - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_core_sci_sm-0.2.4.tar.gz
+#     - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_core_sci_md-0.2.4.tar.gz
