@@ -4,7 +4,7 @@
 # 3. Available spaCy models are described at https://spacy.io/models/en; the "Release details" button is a link to
 #    appropriate release package at GitHub
 
-name: cord-19-env
+name: cord-19-gpu
 channels:
   - defaults
   - conda-forge
