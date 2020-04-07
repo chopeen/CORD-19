@@ -74,7 +74,8 @@ to install via wheel and save compilation time.
 2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
 3. Reboot
 4. `conda activate cord-19-env`
-5. `pip install spacy[cuda]`
+5. `pip uninstall spacy` - to remove non-GPU spaCy
+6. `pip install spacy[cuda100]`
 
 ### WSL
 
