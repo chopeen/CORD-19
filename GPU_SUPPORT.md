@@ -20,7 +20,7 @@ To my best knowledge though, the steps below are valid and will install spaCy wi
    it may be unnecessary, since I trying to use the wheel distribution for all packages)
 2. Install [CUDA Toolkit 10.0](https://developer.nvidia.com/cuda-downloads) (not 10.2, because _WARNING: spacy 2.2.4 does not provide the extra 'cuda102'_)
 3. Reboot
-4. `conda env create -f environment-gpu.yml`
+4. `conda env create -f environment_gpu.yml`
 
 In case of errors:
 
