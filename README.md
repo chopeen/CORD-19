@@ -69,32 +69,24 @@ for wheel distribution or `spacy[cuda]` to compile it from source.
 
 ### Windows 10
 
-```bash
-conda env create -f environment-gpu.yml
-```
-
-#### Windows 10 (failed attempt)
-
 In theory, this method should work. However, CuPy could not get installed properly, so I decided to downgrade to CUDA 10 and
 install the Toolkit as part of the Conda environment (see `environment-gpu.yml`).
 
-1. Install C++ compiler from Microsoft
-   (e.g. [VS 2019 Community](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017))
-2. Install [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads)
+1. Install C++ compiler from Microsoft (e.g. [VS 2019 Community](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017);
+   it may be unnecessary, since I trying to use the wheel distribution for all packages)
+2. Install [CUDA Toolkit 10.0](https://developer.nvidia.com/cuda-downloads) (not 10.2, because _WARNING: spacy 2.2.4 does not provide the extra 'cuda102'_)
 3. Reboot
-4. `conda activate cord-19-env`
-5. `pip install -U spacy[cuda]`
-    - I tried `spacy[cuda102]`, but got _WARNING: spacy 2.2.4 does not provide the extra 'cuda102'_
+4. `conda env create -f environment-gpu.yml`
 
 In case of errors:
 
-1. confirm that the version of installed package `cupy-cudaNNN` matches CUDA Toolkit version (e.g. `cupy-cuda102` for version 10.2)
+1. confirm that the version of installed package `cupy-cudaXXX` matches CUDA Toolkit version (e.g. `cupy-cuda102` for version 10.2)
 2. read carefully the output of `python -c "import cupy; cupy.show_config()"`; it contains useful tips
 3. uninstall CuPy and install with `pip install cupy --no-cache-dir -vvvv`
 
 ### WSL
 
-I was unable to install `spacy[cuda]` using WSL, because [WSL is not able to access the host GPU](https://github.com/Microsoft/WSL/issues/3847).
+`spacy[cuda]` cannot be installed using WSL, because [WSL is not able to access the host GPU](https://github.com/Microsoft/WSL/issues/3847).
 
 ```bash
 Modules:
@@ -106,3 +98,14 @@ ERROR: CUDA could not be found on your system.
 ```
 
 BTW, Zsh did not recognize the package name with brackets, but escaping them helped (`pip install spacy\[cuda\]`).
+
+### Other
+
+Important note from [CuPy installation guide](https://docs-cupy.chainer.org/en/stable/install.html):
+
+> If you are installing CuPy on Anaconda environment, also make sure
+> that the following packages are **not installed**:
+>
+> - cudatoolkit
+> - cudnn
+> - nccl
