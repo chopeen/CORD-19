@@ -1,7 +1,3 @@
 {
-    "theme": "spacy",
-    "custom_theme": {
-        "cardMaxWidth": "95%",
-        "smallText": 16
-    }
+    "theme": "spacy"
 }
