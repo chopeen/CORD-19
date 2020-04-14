@@ -34,7 +34,10 @@ publications.
 
 ## Model performance
 
-Each iteration uses the dataset from the previous one and adds more annotations.
+Each iteration uses all datasets from the previous one and adds more annotations. For detailed information about every
+trained model, see the notebook [train_experiments_2.ipynb](./train_experiments_2.ipynb).
+
+### Base model `en_core_sci_lg`
 
 | Iteration  | Datasets ([data/annotated/](./data/annotated/)) | Best F-score  |
 |------------|-------------------------------------------------|---------------|
@@ -43,8 +46,17 @@ Each iteration uses the dataset from the previous one and adds more annotations.
 | 3          | above + `cord_19_rf_sentences_correct_2`        |   74.894      |
 | 4          | above + `cord_19_rf_sentences_correct_3`        |   68.770      |
 
-For detailed information about every trained model, see the notebook
-[train_experiments_2.ipynb](./train_experiments_2.ipynb).
+### Base model `en_core_sci_md`
+
+| Iteration  | Datasets ([data/annotated/](./data/annotated/)) | Best F-score  |
+|------------|-------------------------------------------------|---------------|
+| 1          | `cord_19_rf_sentences`                          |   57.778      |
+| 2          | above + `cord_19_rf_sentences_correct`          | **74.380**    |
+| 3          | above + `cord_19_rf_sentences_correct_2`        |   74.236      |
+| 4          | above + `cord_19_rf_sentences_correct_3`        |   69.725      |
+
+Using a smaller base model (`md` instead of `lg`) results in significantly smaller model, while the F-score
+moves in both directions depending on the iteration.
 
 ## Packaged models
 
