@@ -43,7 +43,7 @@ Each iteration uses the dataset from the previous one and adds more annotations.
 | 3          | above + `cord_19_rf_sentences_correct_2`        |   74.894      |
 | 4          | above + `cord_19_rf_sentences_correct_3`        |   68.770      |
 
-A detailed log of all experiments can be found in the notebook
+For detailed information about every trained model, see the notebook
 [train_experiments_2.ipynb](./train_experiments_2.ipynb).
 
 ## Packaged models
