@@ -13,7 +13,7 @@ Accessed 2020-03-26. doi:10.5281/zenodo.3715506
 
 ## Experiments
 
-For early experiments, see [train_experiments_1.ipynb](./backup_early_experiments/train_experiments_1.ipynb). They used
+For early experiments, see [train_experiments_1.ipynb](./backup/early_experiments/train_experiments_1.ipynb). They used
 full article abstracts for annotation and training.
 
 Further work is documented in [train_experiments_2.ipynb](./train_experiments_2.ipynb) and the previous datasets
