@@ -48,22 +48,19 @@ trained model, see the notebook [train_experiments_2.ipynb](./train_experiments_
 
 ### Base model `en_core_sci_md`
 
-| Iteration  | Datasets ([data/annotated/](./data/annotated/)) | Best F-score  |
-|------------|-------------------------------------------------|---------------|
-| 1          | `cord_19_rf_sentences`                          |   57.778      |
-| 2          | above + `cord_19_rf_sentences_correct`          | **74.380**    |
-| 3          | above + `cord_19_rf_sentences_correct_2`        |   74.236      |
-| 4          | above + `cord_19_rf_sentences_correct_3`        |   69.725      |
+| Iteration  | Datasets ([data/annotated/](./data/annotated/)) | Best F-score  | Download |
+|------------|-------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------|
+| 1          | `cord_19_rf_sentences`                          |   57.778      | [en_ner_rf_i1_md](https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i1_md-0.0.1.tar.gz) |
+| 2          | above + `cord_19_rf_sentences_correct`          | **74.380**    | [en_ner_rf_i2_md](https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i2_md-0.0.1.tar.gz) |
+| 3          | above + `cord_19_rf_sentences_correct_2`        |   74.236      | [en_ner_rf_i3_md](https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i3_md-0.0.1.tar.gz) |
+| 4          | above + `cord_19_rf_sentences_correct_3`        |   69.725      | [en_ner_rf_i4_md](https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i4_md-0.0.1.tar.gz) |
 
 Using a smaller base model (`md` instead of `lg`) results in significantly smaller model, while the F-score
 moves in both directions depending on the iteration.
 
 ## Packaged models
 
-TODO
-
-We still need to work out how to package spaCy models, but - if you'd like to experiments with raw
-binaries - we can zip the models and sent them to you.
+Medium models for iterations 1-4 can be installed using the download links from the table above.
 
 ## Key files and resources
 
