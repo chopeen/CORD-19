@@ -60,7 +60,19 @@ moves in both directions depending on the iteration.
 
 ## Packaged models
 
+--------------
+
+**WARNING!**
+
+The packaging must be fixed, because `spacy.load("en_ner_rf_i1_md")` is failing:
+
+> OSError: [E050] Can't find model 'en_core_sci_md_vectors'. It doesn't seem to be a shortcut link, a Python package or a valid path to a data directory.
+
+--------------
+
 Medium models for iterations 1-4 can be installed using the download links from the table above.
+
+The directory [test/](./test/) contain a notebook showing the models in action.
 
 ## Key files and resources
 
