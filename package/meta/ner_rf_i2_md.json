@@ -1,0 +1,16 @@
+{
+  "lang": "en",
+  "name": "ner_rf_i2_md",
+  "pipeline": true,
+  "version": "0.0.1",
+  "spacy_version": ">=2.2.1",
+  "description": "spaCy NER model for risk factor names",
+  "author": "Adrianna Safaryn, Anna Haratym-Rojek, Cezary Szulc, Marek Grzenkowicz",
+  "email": "[GitHub username]@gmail.com",
+  "url": "https://github.com/chopeen/CORD-19#base-model-en_core_sci_md",
+  "license": "CC BY-SA 3.0",
+  "sources": [
+    "COVID-19 Open Research Dataset (CORD-19)",
+    "en_core_sci_md"
+  ]
+}
