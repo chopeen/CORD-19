@@ -135,3 +135,4 @@ dmypy.json
 data/CORD-19-research-challenge/
 models/*
 !models/tok2vec_*.bin
+package/en_ner_rf_*
