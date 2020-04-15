@@ -1,0 +1,14 @@
+name: cord-19-test
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7.*
+  - pip
+  - jupyter
+  - spacy=2.2.*
+  - pip:
+    - https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i1_md-0.0.1.tar.gz
+    - https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i2_md-0.0.1.tar.gz
+    - https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i3_md-0.0.1.tar.gz
+    - https://kagglecord19.blob.core.windows.net/risk-factor-ner/en_ner_rf_i4_md-0.0.1.tar.gz
