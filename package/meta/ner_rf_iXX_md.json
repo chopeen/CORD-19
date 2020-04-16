@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "name": "ner_rf_i1_md",
+  "name": "ner_rf_iXX_md",
   "version": "0.0.1",
   "spacy_version": ">=2.2.1",
   "description": "spaCy NER model for risk factor names",
