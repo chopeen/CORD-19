@@ -66,7 +66,7 @@ The directory [test/](./test/) contains a demo of the models in action (separate
 
 ## Key files and resources
 
-- Data preprocessing: [Kaggle notebook](https://www.kaggle.com/cezaryszulc/kaggle-covid-19-competition)
+- Data preprocessing: [Kaggle notebook](https://www.kaggle.com/chopeen/custom-ner-to-recognize-risk-factor-names)
 - Training of *tok2vec* layers: [Kaggle notebook](https://www.kaggle.com/chopeen/spacy-with-gpu-support)
 - Full set of annotations:
   - [cord_19_rf_sentences_merged.jsonl](./data/annotated/cord_19_rf_sentences_merged.jsonl) (dump of the Prodigy dataset)
