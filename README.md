@@ -112,6 +112,7 @@ Accessed 2020-03-26. doi:10.5281/zenodo.3715506
 
 ## Notes
 
+1. [Training a NER model with Prodigy and Transfer Learning](https://www.youtube.com/watch?v=59BKHO_xBPA)
 1. [When to reject when annotating text for NER?](https://support.prodi.gy/t/when-to-reject-in-ner-manual-or-ner-make-gold/892/2)
 1. [When should I press accept, reject or ignore?](https://prodi.gy/docs/named-entity-recognition#manual-accept-reject)
 1. [`batch-train` is deprecated](https://prodi.gy/docs/recipes#deprecated)
