@@ -1,9 +1,13 @@
 # COVID-19 Open Research Dataset Challenge (CORD-19)
 
-Kaggle challenge: [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
+## Kaggle challenge
+
+Challenge: [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)
 
 Task: [What do we know about COVID-19 risk
 factors?](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=558)
+
+Submission: [Kaggle notebook](https://www.kaggle.com/chopeen/custom-ner-to-recognize-risk-factor-names)
 
 ## Team
 
@@ -66,7 +70,6 @@ The directory [test/](./test/) contains a demo of the models in action (separate
 
 ## Key files and resources
 
-- Data preprocessing: [Kaggle notebook](https://www.kaggle.com/chopeen/custom-ner-to-recognize-risk-factor-names)
 - Training of *tok2vec* layers: [Kaggle notebook](https://www.kaggle.com/chopeen/spacy-with-gpu-support)
 - Full set of annotations:
   - [cord_19_rf_sentences_merged.jsonl](./data/annotated/cord_19_rf_sentences_merged.jsonl) (dump of the Prodigy dataset)
